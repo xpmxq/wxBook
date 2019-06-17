@@ -1,0 +1,13 @@
+2019-06-17 22:21:12.669 INFO  org.springframework.boot.StartupInfoLogger 50 logStarting - Starting WxBookApplication on 0OPOMTXQ7UKFNY8 with PID 4108 (F:\wxBook\wxBook_server\target\classes started by Administrator in F:\wxBook\wxBook_server)
+2019-06-17 22:21:12.684 DEBUG org.springframework.boot.StartupInfoLogger 53 logStarting - Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+2019-06-17 22:21:12.684 INFO  org.springframework.boot.SpringApplication 675 logStartupProfileInfo - No active profile set, falling back to default profiles: default
+2019-06-17 22:21:15.120 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner 166 doScan - No MyBatis mapper was found in '[pengming.xu.wxBook.dao]' package. Please check your configuration.
+2019-06-17 22:21:15.916 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner 166 doScan - No MyBatis mapper was found in '[pengming.xu.wxBook]' package. Please check your configuration.
+2019-06-17 22:21:19.588 INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing ProtocolHandler ["http-nio-8080"]
+2019-06-17 22:21:19.636 INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting service [Tomcat]
+2019-06-17 22:21:19.636 INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting Servlet engine: [Apache Tomcat/9.0.19]
+2019-06-17 22:21:20.416 INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing Spring embedded WebApplicationContext
+2019-06-17 22:21:25.417 INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting ProtocolHandler ["http-nio-8080"]
+2019-06-17 22:21:25.507 INFO  org.springframework.boot.StartupInfoLogger 59 logStarted - Started WxBookApplication in 13.788 seconds (JVM running for 15.888)
+2019-06-17 22:22:24.297 INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-06-17 22:22:24.484 DEBUG pengming.xu.wxBook.controller.AccountController 23 test - test

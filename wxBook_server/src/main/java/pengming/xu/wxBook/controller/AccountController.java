@@ -17,4 +17,9 @@ import org.springframework.web.bind.annotation.RestController;
 public class AccountController {
 
     private Logger logger = LogManager.getLogger(this.getClass());
+
+    @RequestMapping("test")
+    public void test(){
+        logger.debug("test");
+    }
 }
