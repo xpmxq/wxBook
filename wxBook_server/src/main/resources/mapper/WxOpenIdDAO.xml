@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.meicloud.ircloud.server.core.dao.WxOpenIdDAO">
+
+    <select id="selectUserId" resultType="java.lang.String">
+        select user_id from ircloud_wx_openid where open_id = #{openId} and wx_type = #{type}
+    </select>
+
+    <delete id="deleteByUserId">
+        delete from ircloud_wx_openid where user_id = #{userId} and wx_type = #{type}
+    </delete>
+
+    <insert id="insertOpenId">
+        insert into ircloud_wx_openid ( user_id,open_id,wx_type ) values (#{userId},#{openId},#{type})
+    </insert>
+
+    <select id="selectIdByUserId" resultType="java.lang.Integer">
+        select id from ircloud_wx_openid where user_id = #{userId} and wx_type = #{type}
+    </select>
+
+    <select id="selectOpenIdByUserId" resultType="java.lang.String">
+        select open_id from ircloud_wx_openid where user_id = #{userId} and wx_type = #{type}
+    </select>
+
+    <select id="selectAllManagerOpenId" resultType="java.lang.String">
+        select open_id from ircloud_wx_openid where wx_type = 2 AND user_id in (select id from ircloud_account where ismanager = 1)
+    </select>
+
+    <update id="updateOpenId">
+        update ircloud_wx_openid set
+          open_id = #{openId}
+        where id = #{id}
+    </update>
+</mapper>
