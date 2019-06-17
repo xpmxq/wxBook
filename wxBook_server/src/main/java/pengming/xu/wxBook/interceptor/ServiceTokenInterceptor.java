@@ -21,6 +21,7 @@ public class ServiceTokenInterceptor extends HandlerInterceptorAdapter{
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
         logger.debug("开始验证token");
+        // TODO
         return super.preHandle(request, response, handler);
     }
 }
