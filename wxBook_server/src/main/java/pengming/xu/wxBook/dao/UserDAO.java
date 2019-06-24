@@ -1,5 +1,6 @@
 package pengming.xu.wxBook.dao;
 
+import org.apache.ibatis.annotations.Param;
 import pengming.xu.wxBook.bean.UserBean;
 
 /**
@@ -18,5 +19,5 @@ public interface UserDAO {
       * @throws
       * @return ${return_type}
       */
-    UserBean selectUserById(String userId);
+    UserBean selectUserById(@Param("userId") String userId);
 }

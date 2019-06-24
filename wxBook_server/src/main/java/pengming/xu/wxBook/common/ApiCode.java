@@ -11,7 +11,8 @@ public enum ApiCode {
 
     SUCCESS("WXBOOK-01","请求成功"),
     FAIL("WXBOOK-99","请求失败"),
-    SYSTEM_ERROR("WXBOOK-02","系统异常");
+    SYSTEM_ERROR("WXBOOK-02","系统异常"),
+    REQUEST_PARAM_ERROR("WXBOOK-03","请求参数异常");
 
     private String code;
 

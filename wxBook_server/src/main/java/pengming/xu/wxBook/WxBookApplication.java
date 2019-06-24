@@ -5,7 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.PropertySource;
 
 @SpringBootApplication
-@PropertySource(value = {"file:config/database.properties","file:config/redis.properties"})
+//@PropertySource(value = {"file:config/database.properties","file:config/redis.properties"})
 public class WxBookApplication {
 
 	public static void main(String[] args) {
