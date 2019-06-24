@@ -67,4 +67,7 @@ public class Constant {
 
     //未知错误
     public static final String UNKNOWN_ERROR = "unknown error";
+
+    //微信登录凭证校验需要的授权类型
+    public static final String WX_CODE_TO_SESSION_GRANT_TYPE = "authorization_code";
 }
